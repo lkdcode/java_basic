@@ -5,11 +5,47 @@ import java.util.Scanner;
 
 public class ArrayPushQuiz {
 
-    private static String[] FOOD_LIST = new String[0];
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        String[] foodList = new String[0];
 
+        System.out.println("# 먹고 싶은 음식을 입력하세요!!");
+        System.out.println("# 입력을 중지하려면 <그만>이라고 입력하세요.");
+
+
+        while (true) {
+
+            System.out.print(">> ");
+            String newFood = scanner.nextLine();
+
+            if (newFood.equals("그만")) break;
+
+            String[] temp = new String[foodList.length + 1];
+            for (int i = 0; i < foodList.length; i++) {
+                temp[i] = foodList[i];
+            }
+            temp[temp.length - 1] = newFood;
+            foodList = temp;
+            temp = null;
+        }
+
+        System.out.println("먹고 싶은 음식리스트: " + Arrays.toString(foodList));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            /*
         while (true) {
             System.out.println("# 나의 장바구니 리스트");
             System.out.println("# 1. 먹고 싶은 매뉴 추가하기");
@@ -89,5 +125,6 @@ public class ArrayPushQuiz {
         sb.append(" ]");
         return sb;
     }
-
+*/
+    }
 }
