@@ -60,5 +60,28 @@ public class MemberRepository {
         return false;
     }
 
+    /**
+     * 마지막회원의번호를아렬주는
+     */
+
+    int getLastMemberId() {
+        return memberList[memberList.length - 1].memberId;
+    }
+
+    /**
+     * 이메일틍 통해 특정 회원 객체를 찾아서 반환하는 기능
+     *
+     * @param email : 찾고 싶은 회원의 이메일
+     * @return : 찾은 회원의 객체 정보, 못 찾으면 null 반환
+     */
+    Member findByEmail(String email) {
+        Member temp=null;
+        for (Member member : memberList) {
+            if (email.equals(member.email)) {
+                temp = member;
+            }
+        }
+        return temp;
+    }
 
 }

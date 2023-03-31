@@ -26,6 +26,4 @@ public class Member {
                 , convertGender, this.age);
     }
 
-    //
-
 }
