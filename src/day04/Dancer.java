@@ -35,17 +35,17 @@ public class Dancer {
 
     // 기능 (메서드) : static을 붙이지 마세요
     // 춤추는 기능
-    void dance() {
+    void dance(Dancer this) {
         System.out.println(genre + "춤을 열정적으로 춥니다.");
     }
 
     // 스트레칭을 하는 기능
-    void stretch() {
+    void stretch(Dancer this) {
         System.out.println("몸을 유연하게 풉니다.");
     }
 
     // 자기소개 기능
-    String introduce() {
+    String introduce(Dancer this) {
         return String.format("내 이름은 %s이고, %s팀에 소속되어 있습니다.", dancerName, crewName);
     }
 }
