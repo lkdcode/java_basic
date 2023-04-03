@@ -12,5 +12,21 @@ public class Test {
         memberRepository.addMember(newMember);
         memberRepository.showMembers();
 
+        // 수정 테스트
+        String targetEmail = "ghi@def.com";
+        boolean updateFlag = memberRepository.changePassword(targetEmail, "9999");
+
+        if (updateFlag) {
+            String updateMember = memberRepository.findByEmail(targetEmail).inform();
+            System.out.println("updateMember = " + updateMember);
+        } else {
+            System.out.println("이메일이 잘 못 됨!");
+        }
+
+        memberRepository.showMembers();
+        memberRepository.removeMember("jkl@def.com");
+        memberRepository.showMembers();
+
+
     }
 }

@@ -1,7 +1,12 @@
 package day05.member;
 
 public class MemberRepository {
+    public static final int NOT_FOUND = -1;
+    // 가입된 회원 배열
     Member[] memberList;
+
+    // 삭제된 회원 배열
+    Member[] removeMember;
 
     public MemberRepository() {
         this.memberList = new Member[3];
@@ -11,7 +16,6 @@ public class MemberRepository {
                 , "벌레콩", 2, Gender.FEMALE, 30);
         memberList[2] = new Member("ghi@def.com", "1234"
                 , "레콩벌", 3, Gender.FEMALE, 20);
-
     }
 
     /**
@@ -33,7 +37,7 @@ public class MemberRepository {
      * 성공시 true, 이메일이 중복되어 실패시 false
      */
     boolean addMember(Member newMember) {
-//         이메일이 중복인가??
+        // 이메일이 중복인가??
         if (isDuplicateEmail(newMember.email)) return false;
 
         // 실제로 멤버를 추가하는 코드
@@ -75,13 +79,62 @@ public class MemberRepository {
      * @return : 찾은 회원의 객체 정보, 못 찾으면 null 반환
      */
     Member findByEmail(String email) {
-        Member temp=null;
+        Member temp = null;
         for (Member member : memberList) {
             if (email.equals(member.email)) {
                 temp = member;
             }
         }
         return temp;
+    }
+
+    /**
+     * 이메일을 통해 저장된 회원의 인덱스 값을 알아내는 메서드
+     *
+     * @param email : 탐색 대상의 이메일
+     * @return : 찾아낸 인덱스, 못 찾으면 -1 리턴
+     */
+    int findIndexByEmail(String email) {
+        for (int i = 0; i < memberList.length; i++) {
+            if (memberList[i].email.equals(email)) return i;
+        }
+        return NOT_FOUND;
+    }
+
+    /**
+     * 비밀번호를 수정하는 기능
+     *
+     * @param email       : 수정 대상의 이메일
+     * @param newPassword : 변경할 새로운 비밀번호
+     */
+    boolean changePassword(String email, String newPassword) {
+        // 인덱스 탐색
+        int index = findIndexByEmail(email);
+        // 수정 진행
+        if (index == NOT_FOUND) return false;
+
+        memberList[index].password = newPassword;
+        return true;
+    }
+
+    void removeMember(String email) {
+        // 인덱스 찾기
+        int index = findIndexByEmail(email);
+
+        if (index == NOT_FOUND) return;
+        Member[] temp = new Member[memberList.length - 1];
+
+        // 1칸 밀기
+        for (int i = 0, j = 0; i < memberList.length; i++) {
+            if (i == index) continue;
+            temp[j++] = memberList[i];
+        }
+
+        memberList = temp;
+    }
+
+    boolean isEmpty() {
+        return memberList.length == 0;
     }
 
 }
