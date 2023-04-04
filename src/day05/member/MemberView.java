@@ -2,6 +2,9 @@ package day05.member;
 
 import java.util.Scanner;
 
+import static day05.member.Gender.*;
+import static java.lang.System.*;
+
 /**
  * 역할 : 회원 관리 앱의 입,출력을 담당
  */
@@ -10,7 +13,7 @@ public class MemberView {
     MemberRepository mr;
 
     public MemberView() {
-        this.sc = new Scanner(System.in);
+        this.sc = new Scanner(in);
         this.mr = new MemberRepository();
     }
 
@@ -149,10 +152,10 @@ public class MemberView {
 
             switch (inputGender.toUpperCase().charAt(0)) {
                 case 'M':
-                    gender = Gender.MALE;
+                    gender = MALE;
                     break checkGender;
                 case 'F':
-                    gender = Gender.FEMALE;
+                    gender = FEMALE;
                     break checkGender;
                 default:
                     System.out.println("# 성별을 M/F로 정확히 입력하세요");
@@ -186,11 +189,9 @@ public class MemberView {
             System.out.println("======== 조회결과 ========");
             System.out.println("# 이름 : " + member.memberName);
             System.out.println("# 비밀번호 : " + member.password);
-            System.out.println("# 성별 : " + (member.gender == Gender.MALE ? "남성" : "여성"));
+            System.out.println("# 성별 : " + (member.gender == MALE ? "남성" : "여성"));
             System.out.println("# 나이 : " + member.age);
         } else System.out.println("# 회원이 존재하지 않습니다.");
 
     }
-
-
 }
