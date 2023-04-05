@@ -15,6 +15,26 @@ public class Main {
         park.drive(new Tucson());
         makeLine();
         park.drive(new Stinger());
+        makeLine();
+        makeLine();
+
+        Mustang mustang = new Mustang();
+        mustang.accelerate();
+        mustang.powerSound();
+
+        Stinger stinger = new Stinger();
+        stinger.accelerate();
+
+        makeLine();
+
+        Car car = shop.exportCar(5000);
+
+        System.out.println(car instanceof Stinger);
+        System.out.println(car instanceof Tucson);
+        System.out.println(car instanceof Mustang);
+
+        System.out.println("car = " + car);
+        car.accelerate();
 
 
     }
