@@ -1,14 +1,9 @@
 package day08.poly.book;
 
 public class Book {
-
     private String title; // 도서명
     private String author; // 저자명
     private String publisher; // 출판사명
-
-    public Book() {
-
-    }
 
     public Book(String title, String author, String publisher) {
         this.title = title;
@@ -38,5 +33,12 @@ public class Book {
 
     public void setPublisher(String publisher) {
         this.publisher = publisher;
+    }
+
+    // 책 정보 문자열 생성
+    public String info() {
+        // 문자열 글자수 얻기 length()
+        if (this.title.length() > 8) return String.format("제목 : %s", (this.title.substring(0, 8) + "..."));
+        return String.format("제목 : %s", title);
     }
 }

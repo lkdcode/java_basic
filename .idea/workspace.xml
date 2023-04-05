@@ -5,7 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="108d6393-d5c6-41cd-ad28-5a1609457288" name="Changes" comment="자바 기초">
+      <change afterPath="$PROJECT_DIR$/src/day08/poly/book/RentStatus.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day04/array/StringList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day04/array/StringList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day08/poly/book/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day08/poly/book/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day08/poly/book/CartoonBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day08/poly/book/CartoonBook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day08/poly/book/CookBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day08/poly/book/CookBook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day08/poly/book/LibraryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day08/poly/book/LibraryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day08/poly/book/LibraryView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day08/poly/book/LibraryView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +25,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -265,7 +272,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680672258007</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="자바 기초">
+      <created>1680673537331</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1680673537331</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

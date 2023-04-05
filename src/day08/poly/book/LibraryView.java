@@ -77,13 +77,59 @@ public class LibraryView {
 
                 break;
             case "2":
+                System.out.println("========= 모든 도서 정보 =========");
+                for (String view : repository.getBookInfoList()) {
+                    System.out.println(view);
+                }
                 //
                 break;
             case "3":
-                //
+                // 사용자에게 검색어를 입력받는다.
+                String keyword = input("# 검색어: ");
+                // 저장소에게 해당 검색어를 주면서
+                // 검색에 걸린 책 정보를 내노라고 해야함
+                String[] bookInfoList = repository.searchBookInfoList(keyword);
+
+                if (bookInfoList.length > 0) {
+                    System.out.printf("\n========= [%s] 검색 결과 =========\n", keyword);
+                    for (String info : repository.searchBookInfoList(keyword)) System.out.println(info);
+                } else {
+                    System.out.println("\n# 검색 결과가 없습니다.");
+                }
                 break;
             case "4":
-                //
+                // 대여 가능한 책의 목록을 번호화 함께 출력
+                System.out.println("\n========= 대여 가능한 도서 목록 =========");
+                String[] rentalList = repository.getBookInfoList();
+
+                int bookNumber = 1;
+                for (String info : rentalList) {
+                    System.out.printf("%d. %s\n", bookNumber++, info);
+                }
+                String rentNumber = input("- 대여할 도서 번호 입력: ");
+                RentStatus rentStatus = repository.rentBook(Integer.parseInt(rentNumber));
+
+                if (rentStatus == RentStatus.RENT_SUCCESS_WITH_COUPON) {
+                    System.out.println("# 성공적으로 요리책이 쿠폰발급과 함께 대여되었습니다.");
+                } else if (rentStatus == RentStatus.RENT_SUCCESS) {
+                    System.out.println("# 도서가 성공적으로 대여되었습니다.");
+                } else {
+                    System.out.println("# 도서 대여에 실패했습니다.");
+                }
+
+                break;
+            case "5":
+                // 도서 저자 이름으로 검색
+                String author = input("# 검색어: ");
+
+                String info = repository.findByAuthor(author);
+                if (info.length() > 0) {
+                    System.out.printf("\n========= [%s] 검색 결과 =========\n", author);
+                    System.out.println(info);
+                } else {
+                    System.out.println("\n# 검색 결과가 없습니다.");
+                }
+
                 break;
             case "9":
                 //
@@ -102,6 +148,7 @@ public class LibraryView {
         System.out.println("# 2. 도서 전체 조회");
         System.out.println("# 3. 도서 검색");
         System.out.println("# 4. 도서 대여하기");
+        System.out.println("# 5. 도서 저자 이름으로 검색");
         System.out.println("# 9. 프로그램 종료하기");
     }
 
