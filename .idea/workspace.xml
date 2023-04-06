@@ -5,13 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="108d6393-d5c6-41cd-ad28-5a1609457288" name="Changes" comment="자바 기초">
-      <change afterPath="$PROJECT_DIR$/src/day09/abs/Cat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/day09/abs/Dog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/day09/abs/GoldFish.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/day09/abs/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/day09/abs/Pet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/day09/final_/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/day09/final_/Person.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,6 +19,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -286,7 +280,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680684535433</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="자바 기초">
+      <created>1680747904057</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1680747904057</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
