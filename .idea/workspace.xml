@@ -5,15 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="108d6393-d5c6-41cd-ad28-5a1609457288" name="Changes" comment="자바 기초">
-      <change afterPath="$PROJECT_DIR$/src/day10/generic/Apple.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/day10/generic/AppleBasket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/day10/generic/Banana.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/day10/generic/BananaBasket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/day10/generic/Basket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/day10/generic/Fruit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/day10/generic/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/day10/collection/list/ListExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/day10/collection/list/ListSearchQuiz.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/day10/exception/UserMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day10/exception/UserMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,17 +69,18 @@
       <recent name="day05.member" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="day10.collection.list" />
       <recent name="day10.generic" />
       <recent name="day08.poly.book" />
     </key>
   </component>
-  <component name="RunManager" selected="애플리케이션.day10.generic.Main">
-    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="day09.music.Application" />
+  <component name="RunManager" selected="애플리케이션.MapExample">
+    <configuration name="ListExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day10.collection.list.ListExample" />
       <module name="java_basic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="day09.music.*" />
+          <option name="PATTERN" value="day10.collection.list.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -93,12 +88,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FinallyExam" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="day10.exception.FinallyExam" />
+    <configuration name="MapExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day10.collection.map.MapExample" />
       <module name="java_basic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="day10.exception.*" />
+          <option name="PATTERN" value="day10.collection.map.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -106,12 +101,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TryExample1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="day10.exception.TryExample1" />
+    <configuration name="SetExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day10.collection.set.SetExample" />
       <module name="java_basic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="day10.exception.*" />
+          <option name="PATTERN" value="day10.collection.set.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -147,11 +142,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="애플리케이션.MapExample" />
+        <item itemvalue="애플리케이션.SetExample" />
+        <item itemvalue="애플리케이션.ListExample" />
         <item itemvalue="애플리케이션.day10.generic.Main" />
         <item itemvalue="애플리케이션.UserMain" />
-        <item itemvalue="애플리케이션.FinallyExam" />
-        <item itemvalue="애플리케이션.TryExample1" />
-        <item itemvalue="애플리케이션.Application" />
       </list>
     </recent_temporary>
   </component>
@@ -332,7 +327,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680832522637</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="자바 기초">
+      <created>1680835757030</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1680835757030</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
