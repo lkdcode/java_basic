@@ -2,7 +2,6 @@ package day10.exception;
 
 public class UserMain {
     public static void main(String[] args) {
-
         LoginUser user = new LoginUser("abc123", "1234");
 
         try {
