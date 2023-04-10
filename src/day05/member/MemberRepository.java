@@ -1,5 +1,9 @@
 package day05.member;
 
+import java.io.FileWriter;
+import java.io.IOException;
+import java.time.LocalDate;
+
 public class MemberRepository {
     public static final int NOT_FOUND = -1;
     // 가입된 회원 배열
@@ -45,6 +49,28 @@ public class MemberRepository {
         for (int i = 0; i < memberList.length; i++) {
             temp[i] = memberList[i];
         }
+
+        // svae 파일 생성
+        try (FileWriter fw = new FileWriter("D:/exercise/member.txt")) {
+
+            String saveInfo = "";
+            saveInfo += newMember.memberId;
+            saveInfo += newMember.email;
+            saveInfo += newMember.memberName;
+            saveInfo += newMember.password;
+            saveInfo += newMember.gender;
+            saveInfo += newMember.age;
+
+            fw.append(saveInfo).append("\n");
+        } catch (IOException e) {
+            System.out.println("파일 저장 실패!");
+            e.printStackTrace();
+        }
+
+
+        // 회원 가입 시간 등록
+        newMember.regDate = LocalDate.now();
+
         temp[memberList.length] = newMember;
         memberList = temp;
 
