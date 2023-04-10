@@ -5,19 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="108d6393-d5c6-41cd-ad28-5a1609457288" name="Changes" comment="자바 기초">
-      <change afterPath="$PROJECT_DIR$/src/day11/api/system/DateTime.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/day11/io/Path.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/day11/io/file/FileExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/day11/io/objstream/LoadSnack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/day11/io/objstream/SaveSnack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/day11/io/objstream/Snack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/day11/io/rw/FileReaderExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/day11/io/rw/FileWriterExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/day11/io/stream/FileInputExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/day11/io/stream/FileOutputExample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/day05/member/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day05/member/Member.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/day05/member/MemberRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day05/member/MemberRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day10/collection/music/Singer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day10/collection/music/Singer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day10/collection/music/SingerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day10/collection/music/SingerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day10/collection/music/SystemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day10/collection/music/SystemController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,13 +80,13 @@
       <recent name="day08.poly.book" />
     </key>
   </component>
-  <component name="RunManager" selected="애플리케이션.LoadSnack">
-    <configuration name="FileInputExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="day11.io.stream.FileInputExample" />
+  <component name="RunManager" selected="애플리케이션.Application">
+    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day10.collection.music.Application" />
       <module name="java_basic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="day11.io.stream.*" />
+          <option name="PATTERN" value="day10.collection.music.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -157,11 +148,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="애플리케이션.Application" />
         <item itemvalue="애플리케이션.LoadSnack" />
         <item itemvalue="애플리케이션.SaveSnack" />
         <item itemvalue="애플리케이션.FileReaderExample" />
         <item itemvalue="애플리케이션.FileWriterExample" />
-        <item itemvalue="애플리케이션.FileInputExample" />
       </list>
     </recent_temporary>
   </component>
@@ -370,7 +361,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681091803639</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="자바 기초">
+      <created>1681107613916</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1681107613916</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

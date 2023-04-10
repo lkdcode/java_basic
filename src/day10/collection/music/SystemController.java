@@ -1,6 +1,7 @@
 package day10.collection.music;
 
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 public class SystemController {
@@ -10,6 +11,7 @@ public class SystemController {
     public SystemController() {
         this.inputView = new InputView();
         this.singerRepository = new SingerRepository();
+        singerRepository.loadFile();
     }
 
     public void start() {
@@ -71,6 +73,7 @@ public class SystemController {
             } else {
                 singer.insertSong(inputSongName);
                 System.out.println("# " + singer.getName() + "님의 노래 목록에 '" + inputSongName + "' 곡이 추가 되었습니다.");
+                singerRepository.autoSave();
                 return;
             }
         }
@@ -78,15 +81,17 @@ public class SystemController {
 
     private void insertNewSinger(String name, String song) {
         singerRepository.insertSinger(name, new Singer(name, song));
+        singerRepository.autoSave();
         System.out.println("# 아티스트 [" + name + "]님이 신규 등록되었습니다.");
     }
 
     private Singer findSingerByName(String name) {
-        List<Singer> singerList = singerRepository.getSingerList();
+        Map<String, Singer> singerList = singerRepository.getSingerList();
 
-        for (Singer singer : singerList) {
-            if (singer.getName().equals(name)) {
-                return singer;
+        for (String singer : singerList.keySet()) {
+            Singer target = singerList.get(singer);
+            if (target.getName().equals(name)) {
+                return target;
             }
         }
 
