@@ -6,12 +6,12 @@ import java.time.LocalDateTime;
 // 역할: 1명의 회원정보를 묶어주는 역할
 // Java Bean
 public class Member {
-    String email;
-    String password;
-    String memberName;
-    int memberId;
-    Gender gender;
-    int age;
+    public String email;
+    public String password;
+    public String memberName;
+    public int memberId;
+    public Gender gender;
+    public int age;
 
     // 회원가입일
     LocalDate regDate;
@@ -33,5 +33,7 @@ public class Member {
                 , this.memberId, this.email, this.memberName
                 , convertGender, this.age);
     }
+
+
 
 }
