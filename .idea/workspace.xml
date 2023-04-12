@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="108d6393-d5c6-41cd-ad28-5a1609457288" name="Changes" comment="자바 기초">
-      <change afterPath="$PROJECT_DIR$/src/day13/Dish.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/day13/Filtering.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/day13/Menu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/day13/VegePredicate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/day13/Finding.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/day13/Mapping.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/day13/SimpleDish.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -83,20 +82,7 @@
       <recent name="day08.poly.book" />
     </key>
   </component>
-  <component name="RunManager" selected="애플리케이션.Filtering">
-    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="day10.collection.music.Application" />
-      <module name="java_basic" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="day10.collection.music.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="애플리케이션.Mapping">
     <configuration name="Filtering (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="day13.Filtering" />
       <module name="java_basic" />
@@ -123,12 +109,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="day12.inner.Main" />
+    <configuration name="Finding" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day13.Finding" />
       <module name="java_basic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="day12.inner.*" />
+          <option name="PATTERN" value="day13.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Mapping" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day13.Mapping" />
+      <module name="java_basic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="day13.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -151,11 +150,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="애플리케이션.Mapping" />
+        <item itemvalue="애플리케이션.Finding" />
         <item itemvalue="애플리케이션.Filtering" />
         <item itemvalue="애플리케이션.Filtering (1)" />
         <item itemvalue="애플리케이션.day12.lambda.Main" />
-        <item itemvalue="애플리케이션.Main" />
-        <item itemvalue="애플리케이션.Application" />
       </list>
     </recent_temporary>
   </component>
@@ -392,7 +391,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681181323835</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="자바 기초">
+      <created>1681263533154</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1681263533154</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
